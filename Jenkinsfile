@@ -17,9 +17,11 @@ node {
                 env.TIME = Calendar.getInstance(TimeZone.getTimeZone("Brazil/East")).getTime().format('dd/MM/YYYY - hh:mm:ss')
             }
             echo '${env.ID} - ${env.TIME}'
+        }
         stage('FIM') {
             script {
                 echo 'Finalizando...'
             }
         }
+        
 }
